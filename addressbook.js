@@ -122,3 +122,16 @@ Addcontact("Adam","Gilchrist","nethajinagar","ranipet","andhrapradesh",123456,"1
 Addcontact("Hardhik","Pandhya","guntur","vellore","karnataka",123456,"11 1111111111","Raghu@gmail.com");
   AddressBook.forEach((contact) => console.log(contact.toString()));
 }
+
+      
+  AddressBook.forEach((contact) => console.log(contact.toString()));
+  // UC4 
+  AddressBook.filter(contact => contact.firstName == "Bala" && contact.lastName == "Chandar").forEach(contact =>{ contact.address = "RajajiNagar"; contact.city = "Banagalore";})
+  AddressBook.forEach(contact=>console.log(contact.toString()));
+  // UC5 
+  console.log("Deletes the contact from AddressBook Array.");
+  
+  DeleteContact("Bala", "Chandar");
+  AddressBook.forEach(contact=>console.log(contact.toString()));
+}
+create();
